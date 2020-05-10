@@ -2,50 +2,90 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="Ken/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="index.css" rel="stylesheet" type="text/css">
-<script src="kk.js"></script>
+<script src="index.js"></script>
 </head>
 <body>
 
-<div class="gesture">
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Services')">Services</button>
-  <button class="tablinks" onclick="openCity(event, 'Contacts')">contacts</button>
-</div>
-
-<div id="Home" class="tabcontent">
-  
-  <h3>Register With us</h3>
-          
-        <span class="registration" id="registration">
-           <div class="form">
-       <form name="form1" action="#" onsubmit="myFunction()">
+    <table>
+      <tr>
+      <td align=center>
       
-            <label>First name:</label>
-                        <label>First name:</label>
-            <input type="text" id="myInput" name = "fname" required><br><br>
-            <label>second name:</label>
-            <input type="text" name = "sname" required><br><br>
-            <label>Email adress:</label>
-            <input type="text" name = "ename" required ><br><br>
-				Gender:
-				<input type="radio" name="gender" value="female">Female
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="Rather not say">Rather not say
-				<br><br>
-          
-            <label>phone number:</label>
-              <input type="tel" id="phone" name="phone" placeholder="+254 701234567" required><br><br>
-  <small>Format: +254 701234567</small><br><br>
-      <input type="submit" name="submit" value="Submit" onsubmit = "myFunction()" />
-     
-        </span>
-		  </form>
-    <p id="demo"></p>
-        </div>
-
+      <form name=form>
+      <center style="position: fixed;bottom:400px;left: 565px;width: 33px;">
+      <table border=9 cellspacing=11 cellpadding=20 bgcolor=wheat>
+      <tr><td colspan=3 align=center><font face="verdana, arial" size="-1"><b style="font-size: 20px;">Enter your gender and when were you born?</b></font></td></tr>
+      <tr>
+        <td align="center">
+          <select name="gender">
+            <option value="" selected>Gender
+              <option value="Male">Male
+              <option value="Female">Female
+          </select>
+        </td>
+        <td align=center>
+      <select name="month">
+      <option value="" selected>Month
+      <option value="January">Jan
+      <option value="February">Feb
+      <option value="March">Mar
+      <option value="April">Apr
+      <option value="May">May
+      <option value="June">Jun
+      <option value="July">Jul
+      <option value="August">Aug
+      <option value="September">Sep
+      <option value="October">Oct
+      <option value="November">Nov
+      <option value="December">Dec
+      </select>
+      </td>
+      <td align=center>
+      <select name="day">
+      <option value="" selected>Day
+      <option value="1">01
+      <option value="2">02
+      <option value="3">03
+      <option value="4">04
+      <option value="5">05
+      <option value="6">06
+      <option value="7">07
+      <option value="8">08
+      <option value="9">09
+      <option value="10">10
+      <option value="11">11
+      <option value="12">12
+      <option value="13">13
+      <option value="14">14
+      <option value="15">15
+      <option value="16">16
+      <option value="17">17
+      <option value="18">18
+      <option value="19">19
+      <option value="20">20
+      <option value="21">21
+      <option value="22">22
+      <option value="23">23
+      <option value="24">24
+      <option value="25">25
+      <option value="26">26
+      <option value="27">27
+      <option value="28">28
+      <option value="29">29
+      <option value="30">30
+      <option value="31">31
+      </select>
+      </td>
+      <td align=center>
+      <input type=text name=year value="19" size=4 maxlength=4>
+      </td></tr>
+      </table><p>
+      <input type=button value="calculate" onClick="birthday()">
+      </center>
+      </form>
+      
+      </td>
+      </tr>
+      </table>
+      
   </body>
    </html>
