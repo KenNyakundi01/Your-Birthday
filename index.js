@@ -1,8 +1,7 @@
 function birthday() {
+   gender = document.form.selectedIndex
     month = document.form.month.selectedIndex;
-    month = document.form.month.options[month].value;
     day = document.form.day.selectedIndex;
-    day = document.form.day.options[day].value;
     year = document.form.year.value;
     var date = month + " " + day + ", " + year;
     var then = new Date(date);
@@ -11,17 +10,17 @@ function birthday() {
     var year=then.getYear();
     if (year<100) year="19" + then.getYear();
     else year=then.getYear();
-    var weekday = new Array(6);
-    weekday[1]="Kwasi";
-    weekday[2]="Kwadwo";
-    weekday[3]="Kwabena";
-    weekday[4]="Kwaku";
-    weekday[5]="Yaw";
-    weekday[6]="Kofi";
-    weekday[7]="Kwame";
-    if (day != date) alert("Sorry!  That appears to be an invalid date!");
+    var akan = new Array(6);
+    akan[1]="Kwasi";
+    akan[2]="Kwadwo";
+    akan[3]="Kwabena";
+    akan[4]="Kwaku";
+    akan[5]="Yaw";
+    akan[6]="Kofi";
+    akan[7]="Kwame";
+    if (day != date) alert("Sorry! You have entered an invalid date!");
     else {
-    dayborn = weekday[theday];
+    dayborn = akan[theday];
     date = dayborn + ", " + month + " " + date ;
     alert("Your Akan name is " +  date);
        }
