@@ -5,7 +5,7 @@ function birthday() {
     year = document.form.year.value;
     var date = month + " " + day + ", " + year;
     var then = new Date(date);
-    var theday = then.getDay()+1;
+    var akanday = then.getDay()+1;
     var date=then.getDate();
     var year=then.getYear();
     if (year<100) year="19" + then.getYear();
@@ -20,7 +20,7 @@ function birthday() {
     akan[7]="Kwame";
     if (day != date) alert("Sorry! You have entered an invalid date!");
     else {
-    dayborn = akan[theday];
+    dayborn = akan[akanday];
     date = dayborn + ", " + month + " " + date ;
     alert("Your Akan name is " +  date);
        }
