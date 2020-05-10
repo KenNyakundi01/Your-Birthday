@@ -22,6 +22,6 @@ function birthday() {
     else {
     dayborn = akan[akanday];
     date = dayborn + ", " + month + " " + date ;
-    alert("Your Akan name is " +  date);
+     alert("Your Akan name is " +  date);
        }
     }
