@@ -21,7 +21,7 @@ function birthday() {
     if (day != date) alert("Sorry! You have entered an invalid date!");
     else {
     dayborn = akan[akanday];
-    date = dayborn + ", " + month + " " + date ;
-     alert("Your Akan name is " +  date);
+    date = dayborn + " " + month + " , " + date ;
+     alert("Your Akan name is "+ date);
        }
     }
