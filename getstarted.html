@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Ken/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="kk.js"></script>
+</head>
+<body>
+
+<div class="gesture">
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Services')">Services</button>
+  <button class="tablinks" onclick="openCity(event, 'Contacts')">contacts</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  
+  <h3>Register With us</h3>
+          
+        <span class="registration" id="registration">
+           <div class="form">
+       <form name="form1" action="#" onsubmit="myFunction()">
+      
+            <label>First name:</label>
+                        <label>First name:</label>
+            <input type="text" id="myInput" name = "fname" required><br><br>
+            <label>second name:</label>
+            <input type="text" name = "sname" required><br><br>
+            <label>Email adress:</label>
+            <input type="text" name = "ename" required ><br><br>
+				Gender:
+				<input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="Rather not say">Rather not say
+				<br><br>
+          
+            <label>phone number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="+254 701234567" required><br><br>
+  <small>Format: +254 701234567</small><br><br>
+      <input type="submit" name="submit" value="Submit" onsubmit = "myFunction()" />
+     
+        </span>
+		  </form>
+    <p id="demo"></p>
+        </div>
+
+  </body>
+   </html>

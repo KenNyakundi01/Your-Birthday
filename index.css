@@ -1,0 +1,36 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+  }
+  .container{
+     
+      position:absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      background-image:radial-gradient(green, transparent);
+      opacity:1;
+      background-repeat:no-repeat;
+      background-size:cover;
+  }
+
+  ul>li{ 
+    display:inline-block;
+  }
+
+  nav>ul>li>a {  
+  padding:18px;
+  margin-right: 0;
+  text-transform:uppercase;
+  text-decoration:underline;
+  display: inline-block;
+  color:black;
+  position: fixed;
+  bottom:260px;
+  }
+  nav>ul>li>a:hover {
+ color:red;
+  background:gold;
+  
+  }
+  
