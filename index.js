@@ -1,7 +1,7 @@
 function birthday() {
    gender = document.form.selectedIndex
     month = document.form.month.selectedIndex;
-    date = document.form.day.selectedIndex;
+    day = document.form.day.selectedIndex;
     year = document.form.year.value;
     var date = month + " " + day + ", " + year;
     var then = new Date(date);
