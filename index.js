@@ -10,7 +10,7 @@ function birthday() {
     var year=then.getYear();
     if (year<100) year="19" + then.getYear();
     else year=then.getYear();
-    var akan = new Array(6);
+    var akan = new Array;
     akan[1]="Kwasi";
     akan[2]="Kwadwo";
     akan[3]="Kwabena";
